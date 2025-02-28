@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Fraud Detection System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/4.0.3/web3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>🔍 Fraud Detection System</h1>
+        <nav>
+            <a href="login.html">Login</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="admin.html">Admin Panel</a>
+            <a href="dispute.html">Dispute Resolution</a>
+            <a href="investigator.html">Investigator Panel</a>
+            <button id="connectWallet">🔗 Connect Wallet</button>
+            <span id="walletAddress">Not Connected</span>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Wallet Information -->
+        <section class="wallet-info">
+            <h2>💰 Connected Wallet</h2>
+            <p id="walletStatus">🔴 Not Connected</p>
+        </section>
+
+        <!-- Fraud Analysis -->
+        <section class="fraud-check">
+            <h2>🔎 Verify Transaction</h2>
+            <input type="text" id="transactionID" placeholder="Enter Transaction ID">
+            <button id="checkFraud">Analyze Fraud</button>
+            <p id="fraudResult"></p>
+        </section>
+
+        <!-- Blockchain Transaction Verification -->
+        <section class="blockchain-verification">
+            <h2>🔗 Verify on Blockchain</h2>
+            <input type="text" id="blockchainTxID" placeholder="Enter Transaction Hash">
+            <button id="verifyBlockchain">🔍 Verify</button>
+            <p id="blockchainResult"></p>
+        </section>
+
+        <!-- Fraud Risk Scoring & AI Insights -->
+        <section class="ai-risk-scoring">
+            <h2>🤖 AI Fraud Risk Scoring</h2>
+            <p>🔍 Enter transaction details for AI-based risk prediction.</p>
+            <input type="text" id="aiTxID" placeholder="Transaction ID">
+            <button id="aiAnalyze">🚀 AI Analyze</button>
+            <p id="aiRiskResult"></p>
+        </section>
+
+        <!-- Fraud Analytics -->
+        <section class="fraud-analytics">
+            <h2>📊 Live Fraud Analytics</h2>
+            <canvas id="fraudChart"></canvas>
+        </section>
+
+        <!-- Fraud Trends -->
+        <section class="fraud-trends">
+            <h2>📈 Fraud Trend Analysis</h2>
+            <canvas id="fraudTrendChart"></canvas>
+        </section>
+
+        <!-- Transaction History -->
+        <section class="transaction-history">
+            <h2>📜 Transaction History</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Transaction ID</th>
+                        <th>Sender</th>
+                        <th>Receiver</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="transactionTable"></tbody>
+            </table>
+        </section>
+
+        <!-- Investigator Dashboard -->
+        <section class="investigator-dashboard">
+            <h2>🕵️ Investigator Panel</h2>
+            <p>Investigators can review and vote on disputed transactions.</p>
+            <input type="text" id="investigatorTxID" placeholder="Transaction ID">
+            <button id="voteFraud">🚨 Vote Fraud</button>
+            <button id="voteClear">✅ Vote Safe</button>
+            <p id="investigatorVoteResult"></p>
+        </section>
+
+        <!-- Real-time Alerts -->
+        <section class="alerts">
+            <h2>⚠️ Real-Time Alerts</h2>
+            <div id="alertBox"></div>
+        </section>
+
+        <!-- Fraud Flagging -->
+        <section class="fraud-flagging">
+            <h2>🚩 Flag a Fraudulent Transaction</h2>
+            <input type="text" id="flagTransactionID" placeholder="Enter Transaction ID">
+            <input type="text" id="flagReason" placeholder="Enter Reason">
+            <button id="flagFraud">🚨 Flag as Fraud</button>
+            <p id="flagResult"></p>
+        </section>
+
+        <!-- Execution Tracking -->
+        <section class="execution-tracking">
+            <h2>📡 Execution Tracking</h2>
+            <div id="executionStatus">Waiting for execution...</div>
+        </section>
+
+        <!-- Fraud Reports -->
+        <section class="fraud-reports">
+            <h2>📑 Generate Fraud Report</h2>
+            <button id="generateReport">📄 Download Report</button>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+    <script src="web3.js"></script>
+    <script src="chart.js"></script>
+    <script src="alert.js"></script>
+</body>
+</html>
