@@ -1,0 +1,117 @@
+/* Global Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    background-color: #101010;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Sidebar Navigation */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: linear-gradient(180deg, #1e1e1e, #252525);
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a, .sidebar ul li button {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    width: 100%;
+    text-align: center;
+}
+
+.sidebar ul li a:hover, .sidebar ul li button:hover {
+    background: #ff4500;
+    transform: scale(1.05);
+}
+
+.sidebar ul li button {
+    border: none;
+    cursor: pointer;
+}
+
+/* Main Dashboard Content */
+.dashboard-content {
+    margin-left: 270px;
+    padding: 20px;
+    width: calc(100% - 270px);
+}
+
+/* Dashboard Sections */
+.dashboard-section {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    transition: 0.3s ease-in-out;
+}
+
+.dashboard-section:hover {
+    transform: translateY(-5px);
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+
+th {
+    background: #ff4500;
+}
+
+/* Buttons */
+button {
+    padding: 10px 15px;
+    background: linear-gradient(90deg, #ff0000, #ff4500);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #ff4500, #ff0000);
+    transform: scale(1.05);
+}

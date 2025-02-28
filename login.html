@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Login & Register</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="main-container">
+        <div class="form-container">
+            <div class="toggle-buttons">
+                <button id="showLogin">Login</button>
+                <button id="showRegister">Register</button>
+            </div>
+
+            <!-- LOGIN FORM -->
+            <div class="form login-form">
+                <h2>🔐 Login</h2>
+                <input type="text" id="loginUsername" placeholder="Enter your username" required>
+                <div class="password-container">
+                    <input type="password" id="loginPassword" placeholder="Enter your password" required>
+                    <span class="togglePassword" onclick="togglePassword('loginPassword')">👁️</span>
+                </div>
+                <button id="loginBtn">Login</button>
+                <p id="loginStatus"></p>
+            </div>
+
+            <!-- REGISTER FORM -->
+            <div class="form register-form hidden">
+                <h2>📝 Register</h2>
+                <input type="text" id="registerUsername" placeholder="Choose a username" required>
+                <input type="email" id="registerEmail" placeholder="Enter your email" required>
+                <div class="password-container">
+                    <input type="password" id="registerPassword" placeholder="Choose a password" required>
+                    <span class="togglePassword" onclick="togglePassword('registerPassword')">👁️</span>
+                </div>
+                <progress id="passwordStrength" value="0" max="100"></progress>
+                <button id="registerBtn">Register</button>
+                <p id="registerStatus"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

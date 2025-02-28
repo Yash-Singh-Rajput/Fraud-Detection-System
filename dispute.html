@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Dispute Dashboard - Fraud Detection</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dispute.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/4.0.3/web3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>⚖️ Advanced Dispute Resolution Dashboard</h1>
+        <nav>
+            <a href="app.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="admin.html">Admin Panel</a>
+            <a href="dispute.html" class="active">Dispute Resolution</a>
+            <button id="connectWallet">🔗 Connect Wallet</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Live Dispute Cases -->
+        <section class="dispute-cases">
+            <h2>📝 Live Dispute Cases</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dispute ID</th>
+                        <th>Transaction ID</th>
+                        <th>Complainant</th>
+                        <th>Reason</th>
+                        <th>Status</th>
+                        <th>Votes</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="disputeTable">
+                    <!-- Disputes will be dynamically loaded here -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Investigator Voting System -->
+        <section class="voting-section">
+            <h2>🗳️ Investigator Voting Panel</h2>
+            <input type="text" id="voteDisputeID" placeholder="Enter Dispute ID">
+            <button id="voteFraud">🚨 Vote as Fraud</button>
+            <button id="voteClear">✅ Vote as Safe</button>
+            <p id="voteResult"></p>
+        </section>
+
+        <!-- Fraud Dispute Analytics -->
+        <section class="fraud-analytics">
+            <h2>📊 Fraud Dispute Analytics</h2>
+            <canvas id="fraudDisputeChart"></canvas>
+        </section>
+
+        <!-- Automated Notifications -->
+        <section class="alert">
+            <h2>🚨 Automated Dispute Notifications</h2>
+            <div id="alertBox"></div>
+        </section>
+    </main>
+
+    <script src="dispute.css"></script>
+    <script src="alert.js"></script>
+    <script src="chart.js"></script>
+
+</body>
+</html>

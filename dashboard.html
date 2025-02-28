@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Fraud Detection</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <h2>🔍 Admin Dashboard</h2>
+        <ul>
+            <li><a href="#analytics">📊 Fraud Analytics</a></li>
+            <li><a href="#users">👤 User Management</a></li>
+            <li><a href="#transactions">🔎 Monitor Transactions</a></li>
+            <li><a href="#alert">⚠️ Fraud Alerts</a></li>
+            <li><button id="logoutAdmin">🚪 Logout</button></li>
+        </ul>
+    </aside>
+
+    <!-- Main Dashboard Content -->
+    <main class="dashboard-content">
+        
+        <!-- Fraud Analytics -->
+        <section id="analytics" class="dashboard-section">
+            <h2>📊 Fraud Detection Analytics</h2>
+            <canvas id="fraudChart"></canvas>
+        </section>
+
+        <!-- User Management -->
+        <section id="users" class="dashboard-section">
+            <h2>👤 Manage Users</h2>
+            <table>
+                <tr><th>User ID</th><th>Username</th><th>Role</th><th>Action</th></tr>
+                <tbody id="userTable"></tbody>
+            </table>
+        </section>
+
+        <!-- Transaction Monitoring -->
+        <section id="transactions" class="dashboard-section">
+            <h2>🔎 Monitor Transactions</h2>
+            <input type="text" id="transactionID" placeholder="Enter Transaction ID">
+            <button id="checkFraudAdmin">Analyze Fraud</button>
+            <p id="fraudResultAdmin"></p>
+        </section>
+
+        <!-- Fraud Alerts -->
+        <section id="alerts" class="dashboard-section">
+            <h2>⚠️ Real-Time Fraud Alerts</h2>
+            <div id="adminAlertBox"></div>
+        </section>
+
+    </main>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

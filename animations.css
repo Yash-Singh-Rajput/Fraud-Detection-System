@@ -1,0 +1,66 @@
+/* 🌠 Glowing Neon Hover Effect */
+@keyframes neonGlow {
+    0% { box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.5); }
+    50% { box-shadow: 0px 0px 20px rgba(255, 0, 255, 0.7); }
+    100% { box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.5); }
+}
+
+/* 🚀 Floating Animation */
+@keyframes floatEffect {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.fraud-analytics, .fraud-trends {
+    animation: floatEffect 3s infinite ease-in-out;
+}
+
+/* 🔄 Rotating Fraud Analysis Icon */
+@keyframes rotate360 {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.fraud-check h2::before {
+    content: "🔍";
+    display: inline-block;
+    animation: rotate360 3s infinite linear;
+}
+
+/* ⚡ Glitch Effect for Fraud Alerts */
+@keyframes glitch {
+    0% { text-shadow: -5px 0px rgba(255, 0, 0, 0.8), 5px 0px rgba(0, 0, 255, 0.8); }
+    50% { text-shadow: 5px 0px rgba(255, 0, 0, 0.8), -5px 0px rgba(0, 0, 255, 0.8); }
+    100% { text-shadow: -5px 0px rgba(255, 0, 0, 0.8), 5px 0px rgba(0, 0, 255, 0.8); }
+}
+
+.alerts h2 {
+    animation: glitch 0.3s infinite;
+}
+
+/* 🎭 Smooth Hover Effects */
+button, .wallet-info, .investigator-dashboard {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+button:hover, .wallet-info:hover, .investigator-dashboard:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(255, 69, 0, 0.7);
+}
+
+/* 🛠 Loading Animation */
+@keyframes loading {
+    0% { width: 10%; }
+    50% { width: 50%; }
+    100% { width: 100%; }
+}
+
+#executionStatus::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 5px;
+    background: #ff4500;
+    animation: loading 3s infinite;
+}

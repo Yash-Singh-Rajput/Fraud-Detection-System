@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investigator Panel - Fraud Detection</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="investigator.css">
+</head>
+<body>
+
+    <header>
+        <h1>🕵️ Investigator Dashboard</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="dispute.html">Disputes</a>
+            <a href="fraud-reports.html">Reports</a>
+            <button id="connectWallet">🔗 Connect Wallet</button>
+            <span id="walletAddress">Not Connected</span>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Investigator Dispute Panel -->
+        <section class="investigator-panel">
+            <h2>📌 Disputed Transactions</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Transaction ID</th>
+                        <th>Complainant</th>
+                        <th>Reason</th>
+                        <th>Status</th>
+                        <th>Votes</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="disputeTable">
+                    <!-- Disputes will be dynamically loaded here -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Investigator Voting System -->
+        <section class="voting-section">
+            <h2>🗳️ Investigator Voting</h2>
+            <input type="text" id="voteDisputeID" placeholder="Enter Dispute ID">
+            <button id="voteFraud">🚨 Vote Fraud</button>
+            <button id="voteClear">✅ Vote Safe</button>
+            <p id="voteResult"></p>
+        </section>
+
+        <!-- Blockchain Verification -->
+        <section class="blockchain-verification">
+            <h2>🔗 Verify Transaction on Blockchain</h2>
+            <input type="text" id="blockchainTxID" placeholder="Enter Transaction Hash">
+            <button id="verifyBlockchain">🔍 Verify</button>
+            <p id="blockchainResult"></p>
+        </section>
+
+        <!-- Fraud Trends -->
+        <section class="fraud-trends">
+            <h2>📈 Fraud Trend Analysis</h2>
+            <canvas id="fraudTrendChart"></canvas>
+        </section>
+
+        <!-- Fraud Reports -->
+        <section class="fraud-reports">
+            <h2>📑 Generate Investigation Report</h2>
+            <button id="generateReport">📄 Download Report</button>
+        </section>
+
+    </main>
+
+    <script src="investigator.js"></script>
+    <script src="web3.js"></script>
+    <script src="chart.js"></script>
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+
+</body>
+</html>

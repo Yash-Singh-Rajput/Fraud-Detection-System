@@ -1,0 +1,51 @@
+/* Admin Panel Layout */
+.admin-dashboard, .user-management, .transaction-monitoring, .admin-alerts {
+    margin: 80px auto;
+    width: 70%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    transition: 0.3s ease-in-out;
+}
+
+.admin-dashboard:hover, .user-management:hover, .transaction-monitoring:hover, .admin-alerts:hover {
+    transform: translateY(-5px);
+}
+
+/* Admin Buttons */
+button {
+    padding: 10px 15px;
+    background: linear-gradient(90deg, #ff0000, #ff4500);
+    color: rgb(17, 5, 5);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #ff4500, #ff0000);
+    transform: scale(1.05);
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+
+th {
+    background: #ff4500;
+    color: white;
+}

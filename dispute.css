@@ -1,0 +1,87 @@
+/* Global Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #101010;
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+/* Header Navigation */
+header {
+    background: linear-gradient(90deg, #1e1e1e, #252525);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+nav a.active {
+    background: #ff4500;
+}
+
+nav a:hover {
+    background: rgba(255, 69, 0, 0.6);
+}
+
+/* Table Styling */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+
+th {
+    background: #ff4500;
+}
+
+/* Dispute Status Colors */
+.status-pending { color: orange; font-weight: bold; }
+.status-fraud { color: red; font-weight: bold; }
+.status-safe { color: green; font-weight: bold; }
+
+/* Buttons */
+button {
+    padding: 10px 15px;
+    background: linear-gradient(90deg, #ff0000, #ff4500);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #ff4500, #ff0000);
+    transform: scale(1.05);
+}
+
+/* Fraud Analytics Chart */
+.fraud-analytics {
+    margin: 30px auto;
+    width: 70%;
+}

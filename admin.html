@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Fraud Detection</title>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>⚙️ Admin Panel - Fraud Detection System</h1>
+        <button id="logoutAdmin">🚪 Logout</button>
+    </header>
+
+    <main>
+        <!-- Admin Dashboard -->
+        <section class="admin-dashboard">
+            <h2>📊 Fraud Analytics</h2>
+            <canvas id="fraudChart"></canvas>
+        </section>
+
+        <!-- User Management -->
+        <section class="user-management">
+            <h2>👤 User Management</h2>
+            <table>
+                <tr><th>User ID</th><th>Username</th><th>Role</th><th>Action</th></tr>
+                <tbody id="userTable"></tbody>
+            </table>
+        </section>
+
+        <!-- Transaction Monitoring -->
+        <section class="transaction-monitoring">
+            <h2>🔎 Monitor Transactions</h2>
+            <input type="text" id="transactionID" placeholder="Enter Transaction ID">
+            <button id="checkFraudAdmin">Analyze Fraud</button>
+            <p id="fraudResultAdmin"></p>
+        </section>
+
+        <!-- Fraud Alerts -->
+        <section class="admin-alerts">
+            <h2>⚠️ Fraud Alerts</h2>
+            <div id="adminAlertBox"></div>
+        </section>
+    </main>
+
+    <script src="admin.js"></script>
+    <script src="chart.js"></script>
+
+</body>
+</html>

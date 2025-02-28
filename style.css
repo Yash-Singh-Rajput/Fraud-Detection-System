@@ -1,0 +1,117 @@
+/* 🌌 Cyberpunk Dark Mode & Neon Theme */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #050505, #121212);
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+/* 🚀 Header with Glowing Effects */
+header {
+    background: linear-gradient(90deg, #1e1e1e, #252525);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #ff4500;
+    box-shadow: 0px 4px 15px rgba(255, 69, 0, 0.5);
+}
+
+/* 🔥 Futuristic Navigation */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 12px 18px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background: rgba(255, 69, 0, 0.6);
+    box-shadow: 0px 0px 15px #ff4500;
+}
+
+/* 🏦 Section Styling with Glassmorphism */
+section {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 4px 25px rgba(255, 255, 255, 0.1);
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 20px rgba(255, 69, 0, 0.5);
+}
+
+/* ⚡ Futuristic Buttons with Neon Glow */
+button {
+    padding: 12px 20px;
+    border: none;
+    background: linear-gradient(90deg, #ff9800, #ff4500);
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #ff4500, #ff9800);
+    transform: scale(1.07);
+    box-shadow: 0px 0px 10px rgba(255, 69, 0, 0.8);
+}
+
+/* 📊 Enhanced Fraud Charts */
+.fraud-analytics canvas, .fraud-trends canvas {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 25px rgba(0, 255, 255, 0.3);
+}
+
+/* 🎭 Blinking Real-Time Alerts */
+.alerts {
+    background: linear-gradient(45deg, rgba(255, 0, 0, 0.7), rgba(255, 165, 0, 0.7));
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+    animation: blink 1s infinite alternate;
+}
+
+@keyframes blink {
+    from { box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.7); }
+    to { box-shadow: 0px 0px 25px rgba(255, 69, 0, 1); }
+}
+
+/* 🔥 Role-Based UI Elements */
+.user-role {
+    background: rgba(0, 255, 0, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+/* 🕵️ Investigator Dashboard */
+.investigator-dashboard {
+    background: rgba(0, 0, 255, 0.2);
+    border-left: 4px solid #00ffff;
+}
+
+/* 🌟 Smooth Page Fade-In */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+body {
+    animation: fadeIn 1.5s ease-in-out;
+}
